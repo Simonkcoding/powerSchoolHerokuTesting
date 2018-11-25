@@ -84,6 +84,7 @@ class App extends Component {
             <Route exact path="/attendance" render={() => <Attendance loggedIn={this.state.loggedIn} />} />
             <Route exact path="/contacts" render={() => <Contacts loggedIn={this.state.loggedIn} />} />
             <Route exact path="/calendar" render={() => <Calendar loggedIn={this.state.loggedIn} />} />
+            <Route path="/chat" render={() => <Chat title="Chat App Screen" />} />
             <Route
               exact
               path="/formal-details"
@@ -198,7 +199,7 @@ class App extends Component {
         <div>
           <Route path="/login" render={() => <LoginForm updateUser={this.updateUser} />} />
           <Route path="/signup" render={() => <Signup />} />
-          <Route path="/chat" render={() => <Chat title="Chat App Screen" />} />
+          
         </div>
       </div>
     );
