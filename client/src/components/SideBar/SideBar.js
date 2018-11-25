@@ -135,6 +135,25 @@ class SideBar extends Component {
                   </div>
                 </Link>
               </li>
+
+              
+              <li>
+                <Link
+                  to="/chat"
+                  className={
+                    window.location.pathname === "/chat" ? " is-current" : ""
+                  }
+                >
+                  <div className="has-text-left">
+                    <i
+                      className="sidebar-icons fa fa-link"
+                      aria-hidden="true"
+                    />
+                    <div className="side-link-text"> Chat</div>
+                  </div>
+                </Link>
+              </li>
+              
             </ul>
           </aside>
         ) : (
