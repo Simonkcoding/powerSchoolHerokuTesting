@@ -5,7 +5,7 @@ import { USER_CONNECTED, LOGOUT } from "./Events";
 import ChatLogin from "./ChatLogin";
 import ChatContainer from "./chats/ChatContainer";
 
-const socketUrl = "http://localhost:3001";
+const socketUrl = window.location.hostname;
 
 class Chat extends Component {
   constructor(props) {
