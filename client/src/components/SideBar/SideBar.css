@@ -1,0 +1,53 @@
+aside {
+  width: 14rem;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: white;
+  box-shadow: 1px 1px 6px;
+}
+
+.school-logo {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.student-name-tag {
+  margin: 0px;
+}
+
+.student-id {
+  margin-bottom: 20px;
+}
+
+.side-link-text {
+  padding-left: 30px;
+  display: inline;
+}
+
+.sidebar-icons {
+  position: absolute;
+}
+
+.is-current {
+  background-color: rgb(150, 192, 232);
+  transition: all 0.3s ease;
+}
+
+.side-link-text {
+  color: rgb(3, 33, 83);
+}
+
+.sidebar-icons {
+  color: rgb(3, 33, 83);
+}
+
+@media (max-width: 1087.5px) {
+  .is-display-none {
+    display: none;
+  }
+}

@@ -1,0 +1,47 @@
+.loginFormBuffer {
+  padding: 2rem;
+  background: rgba(138, 181, 238, 0.8);
+ width:400px;
+ height:400px;
+ z-index:1;
+ position:absolute;
+ left:50%;
+ top:50%;
+ margin-left:-200px;
+ margin-top:-250px;
+}
+
+.login{
+  z-index: -1;
+  position:aboslute;
+  background: rgb(33,36,50);
+  width:100vw;
+  height:100vh;
+}
+
+.forgot {
+  margin-top: 3rem;
+  font-size: 16px;
+  font-weight: 550;
+}
+
+.loginTitle {
+  margin-bottom: 1rem;
+  font-size: 28px;
+  font-weight: 550;
+}
+
+.innerLogin {
+  margin: 2rem;
+}
+
+@media (min-width: 769px) {
+  .loginFormBuffer {
+    min-width: 400px;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+} 
+

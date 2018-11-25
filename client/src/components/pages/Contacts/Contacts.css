@@ -1,0 +1,46 @@
+.contacts-holder {
+  min-height: 100vh;
+}
+
+.contacts-columns-container {
+  margin: 0% 5%;
+  padding: 3%;
+}
+
+.contacts-title {
+  padding-top: 2%;
+}
+
+li {
+  overflow-wrap: break-word;
+}
+
+.is-128x128 {
+  margin-left: 5%;
+  margin-bottom: 5%;
+  margin-right: 5%;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.contacts-card-content {
+  padding-left: 0px;
+  padding-bottom: 0px;
+}
+
+.contact-card {
+  height: 100%;
+}
+
+.contact-card-li {
+  padding: 5px;
+}
+
+@media (max-width: 768.9px) {
+  .contacts-card-content {
+    padding-top: 0px;
+    padding-left: 5px;
+  }
+}

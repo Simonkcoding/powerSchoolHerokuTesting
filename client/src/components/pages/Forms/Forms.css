@@ -1,0 +1,61 @@
+.separator {
+  border-right: solid 1px #ccc;
+  margin: 0px;
+}
+
+.formsBuffer {
+  margin: 0px;
+}
+
+.subtext {
+  font-size: 10px;
+}
+
+.formsContainer {
+  border: solid 1px #ccc;
+  box-shadow: 1px 1px 4px #ccc;
+  border-radius: 6px;
+  margin: 4rem;
+  min-width: 300px;
+}
+
+.innerContainer {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.buttonPadding {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hiddenForm {
+  display: none;
+}
+
+.imgBuffer {
+  margin-left: 8rem;
+  margin-top: 3rem;
+}
+
+img {
+  max-height: 80vh;
+}
+
+.view-form-button-holder {
+  margin-right: 0px !important;
+}
+
+@media (max-width: 600px) {
+  .formsContainer {
+    margin: 4rem 1rem 4rem 1rem;
+  }
+}
+
+.col{
+  text-align: center
+}
+
+.greenboldSpan{
+  font-size: 18px;
+}
