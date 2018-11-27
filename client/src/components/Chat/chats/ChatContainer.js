@@ -48,11 +48,18 @@ class ChatContainer extends Component {
               style={{
                 height: 300,
                 backgroundColor: "rgb(245,245,245)",
-                border: "5px solid rgb(3, 33, 91)"
+                border: "2px solid rgb(3, 33, 91)",
+                overflow: "auto",
+                borderRadius: " 6px",
+                marginBottom: "10px"
               }}
             >
               {this.state.messages.map(a => {
-                return <h3 style={{ color: "rgb(3, 33, 91)" }}>{a}</h3>;
+                return (
+                  <h3 style={{ marginLeft: "5px", color: "rgb(3, 33, 91)" }}>
+                    {a}
+                  </h3>
+                );
               })}
             </div>
             <textarea
@@ -70,17 +77,28 @@ class ChatContainer extends Component {
                 rows: 4,
                 cols: 50,
                 width: "100%",
-                height: 200,
+                height: 100,
                 margin: "auto",
                 display: "block"
               }}
             />
-            <button onClick={this.send.bind(this)}>Send</button>
             <br />
-            <br />
-            <button className="chat-logout-button" onClick={this.props.logout}>
-              Logout
-            </button>
+            <div className="level">
+              <div className="level-left">
+                <button onClick={this.send.bind(this)} className="btn">
+                  Send
+                </button>
+              </div>
+              <div className="level-right">
+                <button
+                  className="btn"
+                  onClick={this.props.logout}
+                  id="btn-chat-logout"
+                >
+                  Logout
+                </button>
+              </div>
+            </div>
           </div>
         </div>
         <div className="column is-one-fifth" />
