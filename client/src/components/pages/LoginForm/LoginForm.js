@@ -8,11 +8,8 @@ import Particles from "react-particles-js";
 import { Card } from "reactstrap";
 
 
-export class NonUpdatingParticles extends Particles {
-  shouldComponentUpdate(nextProps) {
-    return false;
-  }
-}
+
+
 
 class LoginForm extends Component {
   constructor(props) {
@@ -24,7 +21,22 @@ class LoginForm extends Component {
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    this.componentWillMount= this.componentWillMount.bind(this);
   }
+
+  componentWillMount(){
+    this.enhancer()
+  }
+
+  enhancer=()=>{
+    return class NonUpdatingParticles extends Particles {
+      shouldComponentUpdate(nextProps) {
+        return false;
+      }
+    }
+  }
+  
+
 
   handleChange(event) {
     this.setState({
