@@ -84,6 +84,7 @@ class App extends Component {
               path="/"
               render={() => <Home loggedIn={this.state.loggedIn} />}
             />
+            {/* components which relate databases */}
             <Route
               exact
               path="/support"
@@ -97,15 +98,35 @@ class App extends Component {
             <Route
               exact
               path="/forms"
-              render={() => <Forms loggedIn={this.state.loggedIn} />}
+              render={() => (
+                <Forms
+                  loggedIn={this.state.loggedIn}
+                  username={this.state.username}
+                />
+              )}
             />
-            <Route path="/chat" render={() => <Chat title="Chat" />} />
-
+            <Route
+              exact
+              path="/grades"
+              render={() => (
+                <Grades
+                  loggedIn={this.state.loggedIn}
+                  username={this.state.username}
+                />
+              )}
+            />
             <Route
               exact
               path="/attendance"
-              render={() => <Attendance loggedIn={this.state.loggedIn} />}
+              render={() => (
+                <Attendance
+                  loggedIn={this.state.loggedIn}
+                  username={this.state.username}
+                />
+              )}
             />
+            {/* end of components relating to databases */}
+            <Route path="/chat" render={() => <Chat title="Chat" />} /> 
             <Route
               exact
               path="/contacts"
@@ -219,11 +240,6 @@ class App extends Component {
                   infoText="This homework is about the properties of logs, which was gone over at the beginning of this week in class. You should not need to use any information outside of what was taught in class this week. Please be sure to show all work and include the answer in the answers section for my own quick reference."
                 />
               )}
-            />
-            <Route
-              exact
-              path="/grades"
-              render={() => <Grades loggedIn={this.state.loggedIn} />}
             />
           </div>
 

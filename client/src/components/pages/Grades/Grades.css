@@ -55,6 +55,7 @@
   margin-bottom: 0px;
   padding-bottom: 0px;
   overflow: hidden;
+  width:100vw;
 }
 
 #grades-title-card-content {
@@ -74,4 +75,15 @@ hr {
   .class-overdue {
     margin-left: 1.5rem;
   }
+}
+
+.select-year{
+  width:100vw;
+  padding:5px;
+  margin-left:3vw;
+  float:left;
+}
+
+.btn-year{
+  margin-top:5px;
 }

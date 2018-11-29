@@ -32,10 +32,11 @@ export default class Forms extends React.Component {
   }
 
   loadAllForms = () => {
-    API.getAllForms()
+    let name = this.props.username;
+    API.getAllFormsByStd(name)
       .then(res => {
         this.setState({ forms: res.data });
-        console.log(this.state.forms);
+        ;
       })
       .catch(err => console.log(err));
   };

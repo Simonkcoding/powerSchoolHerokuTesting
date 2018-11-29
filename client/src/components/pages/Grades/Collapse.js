@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Collapse, CardBody, Card } from 'reactstrap';
 import "./Grades.css";
+import moment from 'moment'
 
 class example extends Component {
     state = {
@@ -15,9 +16,7 @@ class example extends Component {
         let assignmentArray = this.props.info.subject.filter(item => Object.keys(item).includes('score'))
         this.setState({
             assignment: assignmentArray
-        }
-        // ,()=>(console.log(this.state.assignment))
-        )
+        })
     }
 
     render() {
@@ -59,7 +58,7 @@ class example extends Component {
                                         {assignment.assignmentName}
                                     </div>
                                     <div className="column is-3">
-                                        {assignment.date}
+                                        {moment(assignment.date).format('YYYY-MM-DD')}
                                     </div>
                                     <div className="column is-2">
                                         {assignment.score}

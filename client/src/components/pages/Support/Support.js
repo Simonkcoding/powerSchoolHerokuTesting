@@ -32,7 +32,8 @@ export default class Support extends React.Component {
   }
 
   loadAllSupportTicket = () => {
-    API.getAllSupportTicket()
+    let name =this.props.username
+    API.getAllSupportTicketByStd(name)
       .then(res => {
         this.setState({ allTickets: res.data })
       }).catch(err => console.log(err))

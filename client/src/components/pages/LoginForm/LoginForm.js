@@ -17,6 +17,7 @@ class LoginForm extends Component {
     this.state = {
       username: "",
       password: "",
+      uid:"",
       redirectTo: null
     };
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -29,8 +30,8 @@ class LoginForm extends Component {
   }
 
   enhancer=()=>{
-    return class NonUpdatingParticles extends Particles {
-      shouldComponentUpdate(nextProps) {
+    return class shouldComponentUpdate extends Particles {
+      shouldComponentUpdate() {
         return false;
       }
     }
@@ -62,7 +63,7 @@ class LoginForm extends Component {
           // update App.js state
           this.props.updateUser({
             loggedIn: true,
-            username: response.data.username
+            username: response.data.username,
           });
           // update the state to redirect to home
           this.setState({
