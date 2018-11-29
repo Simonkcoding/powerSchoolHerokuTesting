@@ -1,0 +1,58 @@
+[
+    {
+        "className":"Math 3",
+        "year":2018,
+        "absencesExcused":3,
+        "absencesUnexcused":1,
+        "tardiesExcused":2,
+        "tardiesUnexcused":0
+    },
+    {
+        "className":"English 3",
+        "year":2018,
+        "absencesExcused":3,
+        "absencesUnexcused":1,
+        "tardiesExcused":2,
+        "tardiesUnexcused":0
+    },
+    {
+        "className":"Biology 3",
+        "year":2018,
+        "absencesExcused":3,
+        "absencesUnexcused":1,
+        "tardiesExcused":2,
+        "tardiesUnexcused":0
+    },
+    {
+        "className":"Geography 3",
+        "year":2018,
+        "absencesExcused":3,
+        "absencesUnexcused":1,
+        "tardiesExcused":2,
+        "tardiesUnexcused":0
+    },
+    {
+        "className":"Chinese",
+        "year":2017,
+        "absencesExcused":2,
+        "absencesUnexcused":2,
+        "tardiesExcused":2,
+        "tardiesUnexcused":0
+    },
+    {
+        "className":"Math 2",
+        "year":2017,
+        "absencesExcused":2,
+        "absencesUnexcused":5,
+        "tardiesExcused":0,
+        "tardiesUnexcused":0
+    },
+    {
+        "className":"Math 1",
+        "year":2016,
+        "absencesExcused":0,
+        "absencesUnexcused":0,
+        "tardiesExcused":0,
+        "tardiesUnexcused":0
+    }
+]
