@@ -1,7 +1,7 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
 import './Attendance.css';
-import AttendanceCard from '../../AttendanceCard/AttendanceCard';
+import AttendanceCard from './AttendanceCard/AttendanceCard';
 
 class Attendance extends React.Component {
   constructor(props) {

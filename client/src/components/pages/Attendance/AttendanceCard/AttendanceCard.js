@@ -1,6 +1,6 @@
 import React from "react";
-import Column from "../Grid/Column";
-import Columns from "../Grid/Columns";
+import Column from "../../../Grid/Column";
+import Columns from "../../../Grid/Columns";
 import "./AttendanceCard.css";
 
 const AttendanceCard = props => {
