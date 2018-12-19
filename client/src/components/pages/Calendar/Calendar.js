@@ -73,7 +73,7 @@ class Calendar extends Component {
             </div>
             <div className="columns calendar-columns">
               <div className="column is-8">
-                <div className="calendar viewing" id="calendar-nov">
+                <div className="calendar not-viewing" id="calendar-nov">
                   <div className="calendar-month">
                     <ul className="month-nav">
                       <li
@@ -210,7 +210,7 @@ class Calendar extends Component {
                     <li>26</li>
                     <li>
                       <span
-                        className="active underlined events-showing"
+                        className="underlined"
                         data-events="English Project Due, Girls Basketball vs South Mecklenburg"
                       >
                         27
@@ -245,7 +245,7 @@ class Calendar extends Component {
                     </li>
                   </ul>
                 </div>
-                <div className="calendar not-viewing" id="calendar-dec">
+                <div className="calendar viewing" id="calendar-dec">
                   <div className="calendar-month">
                     <ul className="month-nav">
                       <li
@@ -345,7 +345,7 @@ class Calendar extends Component {
                     <li>18</li>
                     <li>
                       <span
-                        className="underlined"
+                        className="active underlined events-showing"
                         data-events="Winter Break, Boys Basketball Tournament"
                       >
                         19
@@ -437,11 +437,11 @@ class Calendar extends Component {
             </div>
           </div>
         ) : (
-          <div>
-            {console.log(loggedIn)}
-            <Redirect to={{ pathname: this.state.redirectTo }} />
-          </div>
-        )}
+            <div>
+              {console.log(loggedIn)}
+              <Redirect to={{ pathname: this.state.redirectTo }} />
+            </div>
+          )}
       </div>
     );
   }
